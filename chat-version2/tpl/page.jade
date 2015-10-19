@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+    head
+        title= "zChat"
+        script(src='/chat.js')
+        controller(src='account.js')
+        script(src='/socket.io/socket.io.js')
+        models(src='user.js')
+        models(src='api-messages.js')
+        models(src='api-response.js')
+        models(src='user-profile.js')
+        script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        script(src='var socket=io.connect("http://localhost:3700')
+
+    body
+        #content(style='height: 250px; border: solid 1px #999;') 
+        
+        .controls
+            | Username 
+            br
+            input#name(style='width:60%; height: 25px;')
+            br
+
+            | Message 
+            br
+            input#field(style='width:60%; height: 30px;')
+            input#send(type='button', value='send')
+            
+            input#reset(type='button', value='reset')

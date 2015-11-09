@@ -1,0 +1,23 @@
+{
+  "name": "my-to-do-app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "jade": "1.1.5",
+    "mongodb": "latest",
+    "mongoose": "*",
+    "socket.io": "*"
+  },
+  
+  "description": "to do list",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "express",
+    "start": "node app.js"
+  },
+  "author": "arjune",
+  "license": "ISC"
+}

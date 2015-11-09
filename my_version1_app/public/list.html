@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+  <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+ 
+
+  	<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="css/style.css?v=1">
+ 
+<title>My To-Do Application</title>
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  ul { list-style-type: none; margin: 0; padding: 0; margin-bottom: 10px; }
+  li { margin: 5px; padding: 5px; width: 150px; }
+  </style>
+  <script>
+  $(function() {
+    $( "#sortable" ).sortable({
+      revert: true
+    });
+    $( "#draggable" ).draggable({
+      connectToSortable: "#sortable",
+      helper: "clone",
+      revert: "invalid"
+    });
+    $( "ul, li" ).disableSelection();
+  });
+  </script>
+</head>
+
+<body>
+	<div class="container">
+
+    <br>
+    <br>
+    <br>
+	<form action="/todoList" method="POST">
+		<h1>My To-Do List</h1>
+
+
+
+ 
+<ul id="sortable">
+  <li class="ui-state-default">Item 1</li>
+  <li class="ui-state-default">Item 2</li>
+  <li class="ui-state-default">Item 3</li>
+  <li class="ui-state-default">Item 4</li>
+  <li class="ui-state-default">Item 5</li>
+</ul>
+
+
+        
+      
+  
+  	
+    </div>
+  </form>
+
+
+
+
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<script type="text/javascript" src="javascript/jquery.js"></script> 
+<script type="text/javascript" src="javascript/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="javascript/jquery-ui.min.js"></script> 
+
+<script type="text/javascript" src="javascript/main.js"></script> 
+
+
+
+
+	</div>
+
+</body>
+</html>
+
+

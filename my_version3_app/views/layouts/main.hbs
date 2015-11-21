@@ -1,0 +1,87 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+ 
+
+  	<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="css/style.css?v=1">
+<style>
+body{width: 100%;
+	font-size: 19px;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height: 1.231;
+	margin-top: 30px;
+	background-image: url(public/images/background3.jpg);
+	background-repeat: repeat;}
+
+.container{
+	padding-top: 5%;
+	padding-left: 20%;
+	padding-right: 5%;
+	margin: 0 auto;
+	border-radius: 10px;
+	width: 350px;
+	height: 550px;
+	background-image: url(public/images/background2.jpg);
+
+}
+button{width: 80px; height: 25px;
+color: blue;}
+
+h4{font-family: arial; font-size: 12px;}
+
+input{width: 170px; border-radius: 6px;
+	background-color: #FFFFCC; height: 25px;}
+
+h6{color: #660033; size: 12px;}
+
+</style>
+
+</head>
+<body>
+<div class="container">
+<div id='header'>
+{{#if isActive}}
+  <img src="public/images/logo.png" />
+{{else}}
+  <img src="public/images/logo.png" />
+{{/if}}
+
+<br>
+<br>
+<br>
+{{#if user}}
+	
+Welcome back <b>{{user.username}} </b>.
+<b>{{user.image}}</b
+<img src={{users.image}}/>
+<b>{{list.myList}}</b>.
+<button><a href='/logout'>Logout</a></button>
+{{else}}
+<button><a href='/login'>Login</a></button> | <button><a href='/signup'>Sign up</a></button>
+{{/if}}
+</div>
+
+
+{{{body}}}
+
+<div id='header'>
+<div class="enter">
+{{#if myList}}
+my list<b>{{list.myList}}</b>.
+<center><a href='/mytodolist'>Add</a></center>
+{{else}}
+<br><h6><a href='/mytodolist'>Add to List</a> <h6>
+{{/if }}
+</div>
+
+
+</div>
+ </div>
+
+
+
+</body>
+</html>

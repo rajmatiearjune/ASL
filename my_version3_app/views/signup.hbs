@@ -1,0 +1,12 @@
+{{#if error}}
+<p>There was an error signing up: {{error}}.</p>
+{{/if}}
+<form action='/signup' method='post'>
+<h4>Name:<br><input type='text' value='First Last' name="personName" required /><h4>
+<h4>Email:<br><input type='text' value='Email' name="email" required /><h4>
+<h4>Username:<br> <input type='text' value='Username' name='username' required /><h4>
+<h4>Password:<br> <input type='password' name='password' required /><h4>
+<h4>Password (confirmation):<br> <input type='password' name='password_confirmation' required /><h4>
+<h4>Upload Photo:<br><input type='file' name="picture"><h4> <br>
+<button type='submit'>Submit</button>
+</form>
